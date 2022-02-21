@@ -12,3 +12,8 @@ This repo contains code for apache beam pipelines. It if focused on running pipe
 --region=us-west1
 ```
 
+## Command to run side input template online 
+```
+gcloud dataflow jobs run beam-learb --gcs-location gs://<bucket-name>/templates/beamlearning --parameters gcp_folder=gs://test-global-data/username-password-recovery-code.csv, side_input=gs://<bucket-name>/username.csv
+```
+
