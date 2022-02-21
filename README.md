@@ -17,3 +17,25 @@ This repo contains code for apache beam pipelines. It if focused on running pipe
 gcloud dataflow jobs run beam-learb --gcs-location gs://<bucket-name>/templates/beamlearning --parameters gcp_folder=gs://test-global-data/username-password-recovery-code.csv, side_input=gs://<bucket-name>/username.csv
 ```
 
+## Command to run side output template online 
+
+```
+gcloud dataflow jobs run beam-learn_side_output --gcs-location gs://<bucket>/templates/beamlearning_side_output --parameters gcp_folder=gs://<bucket>/username-password-recovery-code.csv
+```
+
+
+## Service account role required for Dataflow job 
+
+```
+BigQuery Data Owner
+BigQuery User
+Cloud Functions Invoker
+Compute Instance Admin (v1)
+Dataflow Developer
+Dataflow Worker
+Pub/Sub Editor
+Service Account User
+Storage Admin
+BigQuery User
+```
+
