@@ -24,6 +24,12 @@ gcloud dataflow jobs run beam-learn_side_output --gcs-location gs://<bucket>/tem
 ```
 
 
+## Command to run pubsub to bigquery dataflow job from computer
+
+```
+pubsub_to_bigquery.py --project=<project-name> --service_account_credentials_file_path=service_key.json --runner=direct --staging_location=gs://<project-name>/staging --temp_location=gs://<project-name>/tmp --region=us-west1
+```
+
 ## Service account role required for Dataflow job 
 
 ```
